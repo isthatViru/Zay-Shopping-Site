@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zay Shop</title>
+
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+
+<body class="bg-white">
+    <!-- Header: Top info bar -->
+    <nav class="w-full bg-gray-800 h-12 px-6">
+        <div class="flex justify-between items-center h-full text-gray-300 text-sm">
+            <ul class="flex items-center gap-6">
+                <li class="flex items-center gap-2">
+                    <i class="fa-duotone fa-envelope text-[10px]"></i>
+                    <span class="text-[11px]">info@companya.com</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <i class="fa-duotone fa-phone text-[10px]"></i>
+                    <span class="text-[11px]">010-020-0340</span>
+                </li>
+            </ul>
+
+            <ul class="flex items-center gap-5">
+                <li>
+                    <i class="fa-brands fa-facebook-f text-[11px] cursor-pointer hover:text-white"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-instagram text-[11px] cursor-pointer hover:text-white"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-twitter text-[11px] cursor-pointer hover:text-white"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-linkedin-in text-[11px] cursor-pointer hover:text-white"></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Navbar -->
+    <nav class="w-full bg-white h-20 px-10 flex items-center justify-between shadow-sm">
+        <a href="/" class="text-5xl text-green-600 font-medium"> Zay </a>
+
+        <div class="flex gap-16 text-lg font-normal text-slate-600">
+            <a href="#" class="hover:text-black">Home</a>
+            <a href="#" class="hover:text-black">About</a>
+            <a href="#" class="hover:text-black">Shop</a>
+            <a href="#" class="hover:text-black">Contact</a>
+        </div>
+
+        <ul class="flex items-center gap-6 text-xl text-slate-600">
+            <li>
+                <i class="fas fa-search cursor-pointer hover:text-black"></i>
+            </li>
+            <li>
+                <i class="fas fa-shopping-cart cursor-pointer hover:text-black"></i>
+            </li>
+            <li>
+                <i class="fas fa-user cursor-pointer hover:text-black"></i>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hero / Carousel -->
+    <section class="w-full h-180 bg-[#efefef] py-10">
+        <div class="w-full max-w-6xl mx-auto overflow-hidden h-150">
+            <div id="carousel" class="flex transition-transform duration-700 ease-in-out w-full">
+                <div class="min-w-full h-150 flex items-center justify-center text-white text-4xl gap-8">
+                    <div class="h-100 w-130 text-black mt-50">
+                        <span class="text-5xl font-light text-[#59ab6e]">Zay eCommerce</span><br />
+                        <span class="text-3xl">Tiny and Perfect eCommerce Template</span>
+                        <span class="text-lg">Zay Shop is an eCommerce HTML5 CSS template with latest version
+                            of Bootstrap 5 (beta 1). This template is 100% free provided by
+                            TemplateMo website. Image credits go to Freepik Stories,
+                            Unsplash and Icons 8.</span>
+                    </div>
+                    <div class="h-100 w-130 bg-red-700">
+                        <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/banner_img_01.jpg"
+                            alt="" srcset="" />
+                    </div>
+                </div>
+
+                <div class="min-w-full h-150 flex items-center justify-center text-white text-4xl gap-8">
+                    <div class="h-100 w-130 text-black mt-50">
+                        <span class="text-5xl">Proident occaecat</span>
+                        <br />
+                        <span class="text-3xl">Aliquip ex ea commodo consequat</span>
+                        <br />
+                        <span class="text-lg">You are permitted to use this Zay CSS template for your
+                            commercial websites. You are not permitted to re-distribute the
+                            template ZIP file in any kind of template collection
+                            websites.</span>
+                    </div>
+                    <div class="h-100 w-130">
+                        <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/banner_img_02.jpg"
+                            alt="" srcset="" />
+                    </div>
+                </div>
+
+                <div class="min-w-full h-150 flex items-center justify-center text-white text-4xl gap-8">
+                    <div class="h-100 w-130 text-black mt-50">
+                        <span class="text-5xl">Repr in voluptate</span>
+                        <br />
+                        <span class="text-3xl">Ullamco laboris nisi ut</span>
+                        <br />
+                        <span class="text-lg">We bring you 100% free CSS templates for your websites. If you
+                            wish to support TemplateMo, please make a small contribution via
+                            PayPal or tell your friends about our website. Thank you.</span>
+                    </div>
+                    <div class="h-100 w-130">
+                        <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/banner_img_03.jpg"
+                            alt="" srcset="" />
+                    </div>
+                </div>
+            </div>
+
+            <button id="prev"
+                class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 p-3 rounded-full shadow hover:bg-white">
+                ❮
+            </button>
+
+            <button id="next"
+                class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 p-3 rounded-full shadow hover:bg-white">
+                ❯
+            </button>
+        </div>
+        <div class="flex justify-center gap-3 mt-6" id="carousel-dots">
+            <button class="w-10 h-2 rounded-full bg-[#a4cdae]"></button>
+            <button class="w-10 h-2 rounded-full bg-[#a4cdae]"></button>
+            <button class="w-10 h-2 rounded-full bg-[#a4cdae]"></button>
+        </div>
+    </section>
+<!-- Categories -->
+<div class="COM h-180 mt-20 w-full bg-white">
+    <div class="flex flex-col justify-center items-center">
+        <span class="text-3xl text-black">Categories of The Month</span>
+        <br />
+
+        <span class="text-1xl text-black">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.</span>
+    </div>
+    <div class="flex items-center justify-around mt-20 px-14">
+        <div class="bg-neutral-primary-soft block max-w-sm border border-none rounded-base shadow-sx p-6 flex flex-col items-center">
+            <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/category_img_01.jpg" alt="" srcset="" class="rounded-full size-90">
+            <span class="text-2xl mt-4">Watches</span>
+            <button
+                type="button"
+                class="mt-4 rounded-base bg-[#59ab6e] text-white border rounded-[8px] h-12 px-6 py-2 text-sm font-medium shadow-xs hover:bg-success-strong focus:outline-none focus:ring-4 focus:ring-success-medium"
+            >
+                Buy Now
+            </button>
+        </div>
+         <div class="bg-neutral-primary-soft block max-w-sm border border-none rounded-base shadow-sx p-6 flex flex-col items-center">
+            <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/category_img_02.jpg" alt="" srcset="" class="rounded-full size-90">
+            <span class="text-2xl mt-4">Shoes</span>
+            <button
+                type="button"
+                class="mt-4 rounded-base bg-[#59ab6e] text-white border rounded-[8px] h-12 px-6 py-2 text-sm font-medium shadow-xs hover:bg-success-strong focus:outline-none focus:ring-4 focus:ring-success-medium"
+            >
+                Buy Now
+            </button>
+        </div>
+         <div class="bg-neutral-primary-soft block max-w-sm border border-none rounded-base shadow-sx p-6 flex flex-col items-center">
+            <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/category_img_03.jpg" alt="" srcset="" class="rounded-full size-90">
+            <span class="text-2xl mt-4">Accessories</span>
+            <button
+                type="button"
+                class="mt-4 rounded-base bg-[#59ab6e] text-white border rounded-[8px] h-12 px-6 py-2 text-sm font-medium shadow-xs hover:bg-success-strong focus:outline-none focus:ring-4 focus:ring-success-medium"
+            >
+                Buy Now
+            </button>
+        </div>
+    </div>
+</div>
+        <!-- Featured products -->
+        <div class="flex flex-col items-center justify-around mt-20 h-250 bg-[#e9eef5] px-15 ">
+    <div class="flex flex-col justify-center items-center">
+        <span class="text-3xl text-black">Featured Product</span>
+        <br />
+
+        <span class="text-1xl text-black">Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</span>
+    </div>
+      <div class="flex gap-12 items-center justify-around mt-20 h-180 bg-[#e9eef5] px-15 ">
+            <div class="bg-neutral-primary-soft block max-w-sm  rounded-base shadow-sx">
+                <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/feature_prod_01.jpg"
+                    alt="" srcset="" class="w-full h-80" />
+                <div class="flex justify-between p-3">
+                    <div class="text-stone-400">
+                        <i class="fa-solid fa-star text-amber-300"></i><i class="fa-solid fa-star text-amber-300"></i><i
+                            class="fa-solid fa-star text-amber-300"></i>
+                        <i class="fa-duotone fa-solid fa-star"></i>
+                        <i class="fa-duotone fa-solid fa-star"></i>
+                    </div>
+                    <span>$240.00</span>
+                </div>
+                 <div class="flex flex-col gap-2">
+                    <span class="text-3xl">Gym Weight</span>
+                    <span class="text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.</span>
+                    <span class="text-[18px] text-[#cfc9c8]">Reviews (24)</span>
+                </div>
+            </div>
+            <div class="bg-neutral-primary-soft block max-w-sm border border-transparent rounded-base shadow-sx">
+                <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/feature_prod_02.jpg"
+                    alt="" srcset="" class="w-full h-80" />
+                <div class="flex justify-between p-3">
+                    <div class="text-stone-400">
+                        <i class="fa-duotone fa-solid fa-star text-amber-300"></i><i
+                            class="fa-duotone fa-solid fa-star text-amber-300"></i><i
+                            class="fa-duotone fa-solid fa-star text-amber-300"></i><i
+                            class="fa-duotone fa-solid fa-star"></i><i class="fa-duotone fa-solid fa-star"></i>
+                    </div>
+                    <span>$480.00</span>
+                </div>
+                 <div class="flex flex-col gap-2">
+                    <span class="text-3xl">Cloud Nike Shoes</span>
+                    <span class="text-xl">Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.</span>
+                    <span class="text-[18px] text-[#cfc9c8] ">Reviews (48)</span>
+                </div>
+            </div>
+            <div class="bg-neutral-primary-soft block max-w-sm border border-transparent rounded-base shadow-sx">
+                <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/feature_prod_03.jpg"
+                    alt="" srcset="" class="w-full h-80" />
+                <div class="flex justify-between p-3">
+                    <div>
+                        <i class="fa-duotone fa-solid fa-star text-amber-300"></i><i
+                            class="fa-duotone fa-solid fa-star text-amber-300"></i><i
+                            class="fa-duotone fa-solid fa-star text-amber-300"></i><i
+                            class="fa-duotone fa-solid fa-star text-amber-300"></i><i
+                            class="fa-duotone fa-solid fa-star text-amber-300"></i>
+                    </div>
+                    <span>$360.00</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <span class="text-3xl">Summer Addides Shoes</span>
+                    <span class="text-xl">Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.</span>
+                    <span class="text-[18px] text-[#cfc9c8]">Reviews (74)</span>
+                </div>
+            </div>
+        </div>
+</div>
+
+<footer class="bg-neutral-900 text-gray-300">
+    <!-- Footer -->
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 py-12">
+
+      <div>
+        <h2 class="text-2xl font-semibold text-green-500 border-b border-gray-600 pb-3 mb-4">
+          Zay Shop
+        </h2>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-2">
+            <span>📍</span>
+            <span>123 Consectetur at ligula 10660</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span>📞</span>
+            <a href="tel:010-020-0340" class="hover:text-green-400">
+              010-020-0340
+            </a>
+          </li>
+          <li class="flex items-start gap-2">
+            <span>✉️</span>
+            <a href="mailto:info@company.com" class="hover:text-green-400">
+              info@company.com
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-semibold text-white border-b border-gray-600 pb-3 mb-4">
+          Products
+        </h2>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-green-400">Luxury</a></li>
+          <li><a href="#" class="hover:text-green-400">Sport Wear</a></li>
+          <li><a href="#" class="hover:text-green-400">Men's Shoes</a></li>
+          <li><a href="#" class="hover:text-green-400">Women's Shoes</a></li>
+          <li><a href="#" class="hover:text-green-400">Popular Dress</a></li>
+          <li><a href="#" class="hover:text-green-400">Gym Accessories</a></li>
+          <li><a href="#" class="hover:text-green-400">Sport Shoes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-semibold text-white border-b border-gray-600 pb-3 mb-4">
+          Further Info
+        </h2>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-green-400">Home</a></li>
+          <li><a href="#" class="hover:text-green-400">About Us</a></li>
+          <li><a href="#" class="hover:text-green-400">Shop Locations</a></li>
+          <li><a href="#" class="hover:text-green-400">FAQs</a></li>
+          <li><a href="#" class="hover:text-green-400">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="border-t border-gray-700 my-8"></div>
+
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-10">
+
+      <div class="flex gap-4">
+        <a href="#" class="w-15 h-15 flex items-center justify-center rounded-full border border-gray-500 hover:border-white hover:text-black hover:bg-white">
+         <i class="fa-brands fa-facebook-f text-[11px] cursor-pointer"></i>
+        </a>
+        <a href="#" class="w-15 h-15 flex items-center justify-center rounded-full border border-gray-500 hover:border-white hover:text-black hover:bg-white">
+          <i class="fa-brands fa-instagram text-[11px] cursor-pointer hover:text-white"></i>
+        </a>
+        <a href="#" class="w-15 h-15 flex items-center justify-center rounded-full border border-gray-500 hover:border-white hover:bg-white hover:text-black">
+                              <i class="fa-brands fa-twitter text-[11px] cursor-pointer hover:text-white"></i>
+
+        </a>
+        <a href="#" class="w-15 h-15 flex items-center justify-center rounded-full border border-gray-500 hover:border-white hover:bg-white hover:text-black">
+                              <i class="fa-brands fa-linkedin-in text-[11px] cursor-pointer hover:text-white"></i>
+
+        </a>
+      </div>
+
+      <div class="flex w-full md:w-auto">
+        <input
+          type="email"
+          placeholder="Email address"
+          class="px-4 py-2 bg-neutral-900 border border-gray-600 text-sm focus:outline-none focus:border-green-400"
+        />
+        <button class="px-4 py-2 bg-green-600 text-white text-sm hover:bg-green-700">
+          Subscribe
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="bg-black py-4 text-center text-sm text-gray-400">
+    © 2021 Company Name | Designed by
+    <a href="https://templatemo.com" target="_blank" class="text-green-500 hover:underline">
+      TemplateMo
+    </a>
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
