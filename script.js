@@ -7,6 +7,12 @@ let index = 0;
 const totalSlides = carousel.children.length;
 
 function updateCarousel() {
+  //auto carousel
+  setTimeout(()=>{
+    index=(index+1)%totalSlides;
+    updateCarousel();
+
+  }, 4000)
   // move slides
   carousel.style.transform = `translateX(-${index * 100}%)`;
 
@@ -38,3 +44,4 @@ dots.forEach((dot, i) => {
 
 // initialize
 updateCarousel(); 
+

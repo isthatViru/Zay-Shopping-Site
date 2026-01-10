@@ -1,1 +1,26 @@
-@import "tailwindcss";
+@tailwind utilities;
+.marquee {
+  display: flex;
+  width: max-content;
+}
+
+.marquee-track {
+  display: flex;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-reverse {
+  animation-direction: reverse;
+}
