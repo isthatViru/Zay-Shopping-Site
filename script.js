@@ -29,6 +29,7 @@ nextBtn.addEventListener("click", () => {
   updateCarousel();
 });
 
+
 prevBtn.addEventListener("click", () => {
   index = (index - 1 + totalSlides) % totalSlides;
   updateCarousel();
@@ -44,4 +45,5 @@ dots.forEach((dot, i) => {
 
 // initialize
 updateCarousel(); 
+
 
