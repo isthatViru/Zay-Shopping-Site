@@ -4,7 +4,7 @@
     "tailwindcss": "^4.1.18"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
-    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "build": "chmod +x node_modules/.bin/tailwindcss && npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   }
 }
